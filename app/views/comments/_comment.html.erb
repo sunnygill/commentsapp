@@ -4,7 +4,7 @@
    
 <%= link_to 'Delete', comment_path(comment), :method => :delete, :class => "delete", :remote => true %>
   </span>
-<p><b><%= best_in_place comment, :name %></b> wrote:</p>
+<p>Editable by Clicking <b><%= best_in_place comment, :name %></b> wrote:</p>
 <br />
   <%= content_tag(:p, comment.body, :class => "comment-body") %>
 <% end %>
